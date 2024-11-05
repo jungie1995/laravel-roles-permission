@@ -4,6 +4,7 @@ import { ref } from 'vue';
 import DashboardHeader from './DashboardHeader.vue';
 import PageLoader from './PageLoader.vue';
 import SuspenseFallback from './SuspenseFallback.vue';
+import DashboardSidebar from "./DashboardSidebar.vue";
 
 const asyncLoading = ref(false);
 </script>
@@ -16,6 +17,9 @@ const asyncLoading = ref(false);
         >
             <DashboardHeader
                 class="h-full container mx-auto flex-between max-w-[1172px] px-4 xl:px-0 gap-4 text-dark-color"
+            />
+            <DashboardSidebar
+                class="h-full container mx-auto px-4 xl:px-0 text-dark-color"
             />
         </header>
 
