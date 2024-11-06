@@ -76,65 +76,65 @@ function toggleDropdown() {
         <!-- menu links -->
 
         <div class="flex-start gap-4 lg:gap-8">
-<!--            <div class="flex flex-col gap-0.5">-->
-<!--                <div class="flex-start gap-6 lg:gap-8">-->
-<!--                    <RouterLink :to="{ name: 'users' }">-->
-<!--                        <template v-slot="{ isActive }">-->
-<!--                            <span-->
-<!--                                class="lg:text-lg font-bold"-->
-<!--                                :class="[-->
-<!--                                    isActive-->
-<!--                                        ? 'text-active'-->
-<!--                                        : 'hover:text-active-hover',-->
-<!--                                ]"-->
-<!--                            >Users</span-->
-<!--                            >-->
-<!--                        </template>-->
-<!--                    </RouterLink>-->
+            <div class="flex flex-col gap-0.5">
+                <div class="flex-start gap-6 lg:gap-8">
+                    <RouterLink :to="{ name: 'users' }">
+                        <template v-slot="{ isActive }">
+                            <span
+                                class="lg:text-lg font-bold"
+                                :class="[
+                                    isActive
+                                        ? 'text-active'
+                                        : 'hover:text-active-hover',
+                                ]"
+                            >Users</span
+                            >
+                        </template>
+                    </RouterLink>
 
-<!--                    <RouterLink :to="{ name: 'roles' }">-->
-<!--                        <template v-slot="{ isActive }">-->
-<!--                            <span-->
-<!--                                class="lg:text-lg font-bold"-->
-<!--                                :class="[-->
-<!--                                    isActive-->
-<!--                                        ? 'text-active'-->
-<!--                                        : 'hover:text-active-hover',-->
-<!--                                ]"-->
-<!--                            >Roles</span-->
-<!--                            >-->
-<!--                        </template>-->
-<!--                    </RouterLink>-->
+                    <RouterLink :to="{ name: 'roles' }">
+                        <template v-slot="{ isActive }">
+                            <span
+                                class="lg:text-lg font-bold"
+                                :class="[
+                                    isActive
+                                        ? 'text-active'
+                                        : 'hover:text-active-hover',
+                                ]"
+                            >Roles</span
+                            >
+                        </template>
+                    </RouterLink>
 
-<!--                    <RouterLink :to="{ name: 'permissions' }">-->
-<!--                        <template v-slot="{ isActive }">-->
-<!--                            <span-->
-<!--                                class="lg:text-lg font-bold"-->
-<!--                                :class="[-->
-<!--                                    isActive-->
-<!--                                        ? 'text-active'-->
-<!--                                        : 'hover:text-active-hover',-->
-<!--                                ]"-->
-<!--                            >Permissions</span-->
-<!--                            >-->
-<!--                        </template>-->
-<!--                    </RouterLink>-->
+                    <RouterLink :to="{ name: 'permissions' }">
+                        <template v-slot="{ isActive }">
+                            <span
+                                class="lg:text-lg font-bold"
+                                :class="[
+                                    isActive
+                                        ? 'text-active'
+                                        : 'hover:text-active-hover',
+                                ]"
+                            >Permissions</span
+                            >
+                        </template>
+                    </RouterLink>
 
-<!--                    <span-->
-<!--                        class="lg:text-lg font-bold hover:text-active-hover cursor-pointer text-red-200"-->
-<!--                        @click="onLogout"-->
-<!--                    >-->
-<!--                        Logout-->
-<!--                    </span>-->
-<!--                </div>-->
+                    <span
+                        class="lg:text-lg font-bold hover:text-active-hover cursor-pointer text-red-200"
+                        @click="onLogout"
+                    >
+                        Logout
+                    </span>
+                </div>
 
-<!--                <div-->
-<!--                    v-if="userStore.user?.id"-->
-<!--                    class="text-xs text-emerald-300 flex justify-end"-->
-<!--                >-->
-<!--                    {{ `${userStore.user?.name} (${userStore.user?.email})` }}-->
-<!--                </div>-->
-<!--            </div>-->
+                <div
+                    v-if="userStore.user?.id"
+                    class="text-xs text-emerald-300 flex justify-end"
+                >
+                    {{ `${userStore.user?.name} (${userStore.user?.email})` }}
+                </div>
+            </div>
 
             <!-- sun -->
             <span
